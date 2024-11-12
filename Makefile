@@ -8,3 +8,11 @@ init-dev: ## Install dev dependencies
 	poetry install --no-root
 	@echo "Setting up pre-commit"
 	pre-commit install
+
+dev-serve: ## Run the flask dev server
+	@echo "Running dev server"
+	poetry run python3 -m flask --app src.main run
+
+debug-serve: ## Run the flask dev server with debugging mode
+	@echo "Running dev server"
+	poetry run python3 -m flask --app src.main run --debug
