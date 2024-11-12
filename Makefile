@@ -16,3 +16,10 @@ dev-serve: ## Run the flask dev server
 debug-serve: ## Run the flask dev server with debugging mode
 	@echo "Running dev server"
 	poetry run python3 -m flask --app fmdata run --debug
+
+init-db: ## Init the database using the schema.sql file
+	@echo "Init database schema"
+	poetry run python3 -m flask --app fmdata init-db
+
+test: ## Run tests
+	poetry run python3 -m pytest

@@ -1,6 +1,7 @@
 import os
 
-from flask import Flask
+from flask import Flask, render_template
+from . import db
 
 
 def create_app(test_config=None):
@@ -24,9 +25,14 @@ def create_app(test_config=None):
     except OSError:
         pass
 
+    @app.route("/")
+    def root():
+        return render_template("base.html")
+
     # a simple page that says pong
     @app.route("/ping")
     def ping():
-        return "Pong"
+        return render_template("ping.html")
 
+    db.init_app(app)
     return app
