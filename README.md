@@ -15,3 +15,4 @@ Maybe I will even learn a little about HTML+CSS.
 
 # Resources
 - [Flask Tutorial](https://flask.palletsprojects.com/en/stable/tutorial/layout/)
+- [Where I am on the tutorial](https://flask.palletsprojects.com/en/stable/tutorial/database/)
