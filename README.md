@@ -4,7 +4,7 @@ Football Manager Analytics App based on the book
 
 I did something similar before,
 but really liked the idea of building a web app
-with `django` to store/save results and to make
+with `flask` to store/save results and to make
 it more user-friendly.
 
 
