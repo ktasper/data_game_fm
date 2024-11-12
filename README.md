@@ -11,3 +11,7 @@ it more user-friendly.
 I also wanted to practice my testing skills by
 implementing unit tests and end-to-end tests for the app.
 Maybe I will even learn a little about HTML+CSS.
+
+
+# Resources
+- [Flask Tutorial](https://flask.palletsprojects.com/en/stable/tutorial/layout/)
